@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "Header Header"
+    "Left Body"
+    "Footer Footer";
+    grid-template-columns: 224px 1fr;
+    grid-template-rows: 77px 607px 1fr;
+  }
+  .container > div {
+    border: 1px dashed #ffffff; 
+    background-color: #814cb9;
+  }
+  
+  .Header {
+    grid-area: Header; 
+    color: #ffffff;
+    font-size: 35px; 
+    font-weight: bold;
+  }
+  .Left {
+    grid-area: Left;
+  }
+  .Body {
+    grid-area: Body;
+  }
+  .Footer {
+    grid-area: Footer;
+  }
